@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: fadeIn 0.6s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+input[type="text"] {
+  width: 65%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button.add {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+}
+
+button.edit {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #fff;
+  margin-right: 6px;
+}
+
+button.delete {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin-top: 25px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateX(8px);
+  background: rgba(255,255,255,0.35);
+}
+
+li span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
